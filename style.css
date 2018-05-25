@@ -1,0 +1,30 @@
+body{ 
+	color: black; 
+	font-family: arial; 
+	background-image: url("./spring.png")
+ }
+
+h1, h2, h3{
+	color: red
+}
+/*head{background-color: blaredck}*/
+
+.red{
+	color: violet
+}
+
+.peta{float:right;
+	 display:inline-block;
+}
+
+header {
+	border:12px solid green;
+	padding: 10px
+}
+
+article {
+	border :12px solid green;
+	padding :20px;
+}
+
+
