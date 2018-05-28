@@ -1,0 +1,108 @@
+#logo{ 
+	width: 100px;
+	height: 100px;
+	margin-right: 20px;
+	float:left;
+	border-radius: 50%;
+
+ }
+body{
+background-image: url("logo.png");
+background-repeat: no-repeat;
+background-size: 100%;
+background-blend-mode: lighten;
+}
+
+article, header, nav, section, aside, footer{
+	border: 2px solid lightgrey;
+	padding: 10px;
+	margin:5px;
+	font-family: sans-serif;
+	color: red;
+	box-sizing: border-box;
+}
+
+nav{
+	display: flex;
+	justify-content: flex-end;
+    padding-top: 40px;
+    background-color:rgba(76, 175, 80, 0.7);
+}
+
+li{
+ 	display:inline-block;
+	margin-right: 16px
+ }
+
+ article{
+ 	clear: left;
+ }
+
+ .container{
+ 	margin: 0 auto;
+ 	width: 100%;
+ 	display:inline-flex;
+ }
+
+ @media(max-width: 480px){
+ 	.container{
+ 		display: block;
+ 	}
+ 	body{
+ 		background:none;
+ 	}
+ 	ul{display: block;
+ 	}
+ }
+.back{
+	background-color: yellow;
+	position: fixed;
+  	bottom: 20px;
+ 	right: 20px;
+ 	width: 150px;
+	border:2px solid black;
+}
+
+
+
+ /*article{
+ 	width: 500px
+ }
+
+aside{
+	width: 200px
+}*/
+
+
+/*
+body{ 
+
+	color: black; 
+	font-family: arial; 
+	background-image: url("./spring.png")
+ }
+
+h1, h2, h3{
+	color: red
+}
+
+
+.red{
+	color: violet
+}
+
+.peta{float:right;
+	 display:inline-block;
+}
+
+header {
+	border:12px solid green;
+	padding: 10px
+}
+
+article {
+	border :12px solid green;
+	padding :20px;
+}
+
+
