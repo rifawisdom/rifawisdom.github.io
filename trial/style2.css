@@ -1,58 +1,80 @@
 #logo{ 
-	width: 100px;
-	height: 100px;
-	margin-right: 20px;
+	/*width: 100px;*/
+	height: 100%;
+	margin-top: 0px;
 	float:left;
-	border-radius: 50%;
+	border-radius: 70%;
+	position: absolute;
 
  }
+
+ nav{
+ 	position: relative;
+ }
 body{
-background-image: url("logo.png");
-background-repeat: no-repeat;
+background-image: url("spring.png");
+/*background-repeat: no-repeat;
 background-size: 100%;
 background-blend-mode: lighten;
+margin-top: 0px*/
 }
 
-article, header, nav, section, aside, footer{
+article, header, section, aside, footer, nav{
 	border: 2px solid lightgrey;
 	padding: 10px;
 	margin:5px;
 	font-family: sans-serif;
 	color: red;
 	box-sizing: border-box;
+	
+
 }
 
-nav{
+aside{
+	width: 25%
+}
+article{
+	width: 75%
+}
+	
+ul{
 	display: flex;
+	flex-flow: row wrap;
 	justify-content: flex-end;
-    padding-top: 40px;
-    background-color:rgba(76, 175, 80, 0.7);
+	/*margin-top: 0px;*/
+    /*padding-top: 40px;*/
+    background-color:skyblue;
 }
 
-li{
+/*li{
  	display:inline-block;
 	margin-right: 16px
- }
+ }*/
 
  article{
- 	clear: left;
+ 	clear: left; 
  }
 
  .container{
  	margin: 0 auto;
  	width: 100%;
- 	display:inline-flex;
+ 	display:flex;
  }
 
- @media(max-width: 480px){
- 	.container{
- 		display: block;
- 	}
- 	body{
- 		background:none;
- 	}
- 	ul{display: block;
- 	}
+li{
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+}
+
+li:hover {
+  background: darken(deepskyblue, 2%);
+}
+
+ 
+ .car{
+ 	max-width: 100%;
  }
 .back{
 	background-color: yellow;
@@ -61,9 +83,54 @@ li{
  	right: 20px;
  	width: 150px;
 	border:2px solid black;
+    transition: all 2s linear;
+
+}
+.back:hover {
+    background-color: red;
+    border: 3px solid black;
+    width: 200px;
+    transform: scale(1.5);
+    /*transform: rotate(45deg);*/
+    /*transform: translate(-200px);*/
 }
 
+ @media(max-width: 480px){
+ 	ul{flex-direction: column;
+ 	}
+ 	.container{
+ 		display: block;
+ 	}
+ 	ul{padding-left: 0}
 
+ 	li{
+ 		text-align: center;
+    	padding: 10px;
+    	border-top: 1px solid rgba(255, 255, 255, 0.3);
+ 	}
+
+ 	article {
+ 		width: 100%;
+ 	}
+ 	aside{
+ 		width:100%
+ 	}
+ 	
+ }
+
+ @media(max-width: 800px){
+ 	ul{justify-content: space-around;
+ 	}
+ 	.container{
+ 		display: block;
+ 	}
+ 	article {
+ 		width: 100%;
+ 	}
+ 	aside{
+ 		width:100%
+ 	}
+ }
 
  /*article{
  	width: 500px
