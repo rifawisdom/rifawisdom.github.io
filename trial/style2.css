@@ -5,6 +5,8 @@
 	float:left;
 	border-radius: 70%;
 	position: absolute;
+	left: 0px;
+	top:0px;
 
  }
 
@@ -19,7 +21,7 @@ background-blend-mode: lighten;
 margin-top: 0px*/
 }
 
-article, header, section, aside, footer, nav{
+article, header, section, aside, footer{
 	border: 2px solid lightgrey;
 	padding: 10px;
 	margin:5px;
@@ -44,6 +46,8 @@ ul{
 	/*margin-top: 0px;*/
     /*padding-top: 40px;*/
     background-color:skyblue;
+    margin: 0px;
+    font-size: 25px
 }
 
 /*li{
@@ -69,7 +73,7 @@ li{
 }
 
 li:hover {
-  background: darken(deepskyblue, 2%);
+  background: darken(deepskyblue, 50%);
 }
 
  
@@ -108,7 +112,9 @@ li:hover {
     	padding: 10px;
     	border-top: 1px solid rgba(255, 255, 255, 0.3);
  	}
-
+ 	#logo{
+ 		display: none;
+ 	}
  	article {
  		width: 100%;
  	}
